@@ -155,7 +155,7 @@ pub fn pump_tty(infd: i32, outfd: i32) {
                         true
                     }
                 } else {
-                    unreachable!()
+                    false
                 };
                 if !res {
                     break 'poll;
